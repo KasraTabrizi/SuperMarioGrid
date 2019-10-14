@@ -1,17 +1,21 @@
+body{
+    background-color: cornsilk;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(16, 1fr);
     row-gap: 2px;
     column-gap: 2px;
-    /*margin:0 auto;*/
+    margin: 0 auto;
 }
 
 div{
     height: 20px;
     width: 20px;
     background-color: rgb(180, 178, 178);
-    /*animation: expand 5s infinite linear;*/
+    /*animation: expand 10s infinite ease;*/
 }
 
 @keyframes expand{
@@ -22,6 +26,7 @@ div{
     50%{
         row-gap: 20px;
         column-gap: 20px; 
+        border-radius: 20px;
     }
     100%{
         row-gap: 2px;
