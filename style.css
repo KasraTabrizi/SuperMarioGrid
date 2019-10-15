@@ -9,28 +9,27 @@ body{
     row-gap: 2px;
     column-gap: 2px;
     margin: 0 auto;
+    height: 20px;
+    width: 20px;
 }
 
-div{
+.pixels{
     height: 20px;
     width: 20px;
     background-color: rgb(180, 178, 178);
-    /*animation: expand 10s infinite ease;*/
+    animation: expand 10s infinite ease;
 }
 
 @keyframes expand{
     0%{
-        row-gap: 2px;
-        column-gap: 2px; 
     }
     50%{
-        row-gap: 20px;
-        column-gap: 20px; 
+        height: 40px;
+        width: 40px;
         border-radius: 20px;
+        transform: rotate(720deg);
     }
     100%{
-        row-gap: 2px;
-        column-gap: 2px; 
     }
 }
 
